@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Update="wwwroot\index.html">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="TeamSpeak.Sdk, Version=0.1.6282.15613, Culture=neutral, PublicKeyToken=null">
+        <HintPath>TeamSpeak.Sdk.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
